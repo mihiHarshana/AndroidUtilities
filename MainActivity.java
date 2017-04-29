@@ -87,7 +87,7 @@ public class MainActivity extends ActionBarActivity  {
                     Toast.makeText(MainActivity.this, "Data inserted..! " , Toast.LENGTH_LONG).show();
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Data NOT inserted..! " , Toast.LENGTH_LONG);
+                    Toast.makeText(MainActivity.this, "Data NOT inserted..! " , Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -97,9 +97,9 @@ public class MainActivity extends ActionBarActivity  {
             public void onClick(View v) {
                 Integer deleteRows = db.deleteData(txtId.getText().toString());
                 if (deleteRows >0 ) {
-                    Toast.makeText(MainActivity.this, "Data Deleted" , Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this, "Data Deleted" , Toast.LENGTH_SHORT).show();
                 }else {
-                    Toast.makeText(MainActivity.this, "No data to delete" , Toast.LENGTH_SHORT);
+                    Toast.makeText(MainActivity.this, "No data to delete" , Toast.LENGTH_SHORT).show();
                 }
 
             }
